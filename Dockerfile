@@ -1,5 +1,4 @@
 FROM daocloud.io/python:2.7
-#FROM daocloud.io/longsir/stock:master-f4a0fed
 MAINTAINER JiangLong <j_l2006@163.com>
 
 RUN mkdir -p /code
