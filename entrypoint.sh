@@ -1,4 +1,6 @@
 #!/bin/bash
+set -x
+
 today=`date +"%Y%m%d"`
 
 appdir="/code"
