@@ -1,1 +1,0 @@
-*/3 * * * * /code/cron_jobs.sh 1>> /code/jobs.log 2>&1
