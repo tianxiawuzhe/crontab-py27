@@ -1,10 +1,10 @@
 {
     "DBConnect": {
-        "host": "MYSQL_PORT_3306_TCP_ADDR",
-        "port": "MYSQL_PORT_3306_TCP_PORT",
-        "user": "MYSQL_USERNAME",
-        "pswd": "MYSQL_PASSWORD",
-        "name": "MYSQL_INSTANCE_NAME"
+        "host": "BIT_MYSQL_HOST",
+        "port": "BIT_MYSQL_PORT",
+        "user": "BIT_MYSQL_USER",
+        "pswd": "BIT_MYSQL_PWD",
+        "name": "BIT_MYSQL_NAME"
     },
     "QiYeWeiXin": {
         "agentid": 1,
