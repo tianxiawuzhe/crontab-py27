@@ -19,13 +19,11 @@ chmod +x /code/entrypoint.sh && \
 chmod +x /code/cron_jobs.sh && \
 chmod 0600 /var/spool/cron/crontabs/root && \
 pip install --upgrade pip && \
+pip install -r /code/requirements.txt && \
 apt-get clean && \
 apt-get autoclean && \
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
 ls
-##
-##pip install easytrader && \
-##pip install -r /code/requirements.txt && \
 
 #pip install -r /code/libs/easytrader/requirements.txt && \
 #chown -R app:crontab /var/spool/cron/crontabs/app && \
