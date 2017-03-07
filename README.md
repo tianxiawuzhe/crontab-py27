@@ -5,7 +5,7 @@
 
 ## 文件说明
 * config/global.json：配置文件，包括数据库连接及微信企业号的配置
-* QYWeiXin.py：微信消息发送模块，读取app/config/global.json的配置
+* QYWeiXin.py：微信消息发送模块，读取global.json的配置
 * Util.py：通用的功能，包括打印日志，获取时间，读取配置文件等基本功能
 * create_table.txt：建立数据库表的SQL语句
 * crontab_content.txt：在docker容器里的crontab任务
