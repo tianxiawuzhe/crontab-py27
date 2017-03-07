@@ -20,7 +20,7 @@ chmod +x /code/cron_jobs.sh && \
 chmod 0600 /var/spool/cron/crontabs/root && \
 pip install --upgrade pip && \
 pip install -r /code/requirements.txt && \
-pip install easytrader && \
+pip install easytrader==0.8.1 && \
 apt-get clean && \
 apt-get autoclean && \
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
