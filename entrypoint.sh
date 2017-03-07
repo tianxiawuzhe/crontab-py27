@@ -1,6 +1,4 @@
 #!/bin/bash
-set -x
-
 today=`date +"%Y%m%d"`
 
 appdir="/code"
@@ -17,4 +15,4 @@ echo "restart contab services ..."
 service cron restart
 
 echo "entrypoint end "
-#tail -f ${appdir}/jobs.log
+tail -f ${appdir}/jobs.log
