@@ -1,20 +1,20 @@
 # crontab-py27
-* ¾µÏñ»ùÓÚdaocloud.io/python:2.7
-* ½¨Á¢Ò»ÌõcrontabÈÎÎñ£¬Ê¹ÓÃÊý¾Ý¿â¿ØÖÆ¶¨Ê±µ÷¶È
-* »·¾³ÖÐ°²×°vim¹¤¾ß
+* é•œåƒåŸºäºŽdaocloud.io/python:2.7
+* å»ºç«‹ä¸€æ¡crontabä»»åŠ¡ï¼Œä½¿ç”¨æ•°æ®åº“æŽ§åˆ¶å®šæ—¶è°ƒåº¦
+* çŽ¯å¢ƒä¸­å®‰è£…vimå·¥å…·
 
-## ÎÄ¼þËµÃ÷
-* config/global.json£ºÅäÖÃÎÄ¼þ£¬°üÀ¨Êý¾Ý¿âÁ¬½Ó¼°Î¢ÐÅÆóÒµºÅµÄÅäÖÃ
-* QYWeiXin.py£ºÎ¢ÐÅÏûÏ¢·¢ËÍÄ£¿é£¬¶ÁÈ¡global.jsonµÄÅäÖÃ
-* Util.py£ºÍ¨ÓÃµÄ¹¦ÄÜ£¬°üÀ¨´òÓ¡ÈÕÖ¾£¬»ñÈ¡Ê±¼ä£¬¶ÁÈ¡ÅäÖÃÎÄ¼þµÈ»ù±¾¹¦ÄÜ
-* create_table.txt£º½¨Á¢Êý¾Ý¿â±íµÄSQLÓï¾ä
-* crontab_content.txt£ºÔÚdockerÈÝÆ÷ÀïµÄcrontabÈÎÎñ
-* cron_jobs.sh£º[crontab_content.txt]ÖÐÖ¸Ã÷µÄÈÎÎñ½Å±¾
-* jobs.py£º[cron_jobs.sh]½Å±¾ÖÐÐèÒªÊ¹ÓÃµ½µÄ¶àÏß³Ì½Å±¾£¬¶¨Ê±¼ì²éÊý¾Ý¿âÊÇ·ñÓÐ·ûºÏµÄÈÎÎñ£¬Èç¹ûÓÐ£¬¾ÍÐÂ½¨Ïß³Ì²¢Ö´ÐÐ
-* dbutil.py£ºÊý¾Ý¿âÁ¬½ÓµÄ¹«ÓÃ½Å±¾
-* entrypoint.sh£ºdockerÈÝÆ÷Æô¶¯ºóÊ×´ÎÖ´ÐÐµÄ½Å±¾
-> ×îºóÓÐ¸ötail -fÃüÁî£¬·ÀÖ¹ÈÝÆ÷²»×Ô¶¯ÍË³ö¡£dockerÈÝÆ÷Æô¶¯Ê±ÈôÆô¶¯½Å±¾»á×ÔÐÐÖ´ÐÐÍê£¬ÔòÈÝÆ÷Ò²»á¸ú×Å×ÔÐÐÍË³ö¡£
-* Dockfile£ºÈç¹ûreqirements.txtÖÐÓÐ°üµÄÒÀÀµ£¨Èç±¾ÎÄÖÐeasytrader£©£¬ÔòÐè°Ñ´Ë°ü·ÅÔÚDockfileÖÐ°²×°¡£Ô­ÒòÎªreqirements.txt°²×°Ê±£¬»áÏÈÈ«²¿¼ì²é°üµÄÒÀÀµ£¬È»ºóÔÙ½øÐÐ°²×°£»Èç¹û¼ì²éÄ³°üµÄÒÀÀµÃ»ÓÐ°²×°£¬Ôò»áÖ±½Ó±¨´í£¬Õû¸öreqirmentsÒ²¾Í°²×°²»³É¹¦¡£
+## æ–‡ä»¶è¯´æ˜Ž
+* config/global.jsonï¼šé…ç½®æ–‡ä»¶ï¼ŒåŒ…æ‹¬æ•°æ®åº“è¿žæŽ¥åŠå¾®ä¿¡ä¼ä¸šå·çš„é…ç½®
+* QYWeiXin.pyï¼šå¾®ä¿¡æ¶ˆæ¯å‘é€æ¨¡å—ï¼Œè¯»å–global.jsonçš„é…ç½®
+* Util.pyï¼šé€šç”¨çš„åŠŸèƒ½ï¼ŒåŒ…æ‹¬æ‰“å°æ—¥å¿—ï¼ŒèŽ·å–æ—¶é—´ï¼Œè¯»å–é…ç½®æ–‡ä»¶ç­‰åŸºæœ¬åŠŸèƒ½
+* create_table.txtï¼šå»ºç«‹æ•°æ®åº“è¡¨çš„SQLè¯­å¥
+* crontab_content.txtï¼šåœ¨dockerå®¹å™¨é‡Œçš„crontabä»»åŠ¡
+* cron_jobs.shï¼š[crontab_content.txt]ä¸­æŒ‡æ˜Žçš„ä»»åŠ¡è„šæœ¬
+* jobs.pyï¼š[cron_jobs.sh]è„šæœ¬ä¸­éœ€è¦ä½¿ç”¨åˆ°çš„å¤šçº¿ç¨‹è„šæœ¬ï¼Œå®šæ—¶æ£€æŸ¥æ•°æ®åº“æ˜¯å¦æœ‰ç¬¦åˆçš„ä»»åŠ¡ï¼Œå¦‚æžœæœ‰ï¼Œå°±æ–°å»ºçº¿ç¨‹å¹¶æ‰§è¡Œ
+* dbutil.pyï¼šæ•°æ®åº“è¿žæŽ¥çš„å…¬ç”¨è„šæœ¬
+* entrypoint.shï¼šdockerå®¹å™¨å¯åŠ¨åŽé¦–æ¬¡æ‰§è¡Œçš„è„šæœ¬ã€‚
+ * æœ€åŽæœ‰ä¸ªtail -få‘½ä»¤ï¼Œé˜²æ­¢å®¹å™¨ä¸è‡ªåŠ¨é€€å‡ºã€‚dockerå®¹å™¨å¯åŠ¨æ—¶è‹¥å¯åŠ¨è„šæœ¬ä¼šè‡ªè¡Œæ‰§è¡Œå®Œï¼Œåˆ™å®¹å™¨ä¹Ÿä¼šè·Ÿç€è‡ªè¡Œé€€å‡ºã€‚
+* Dockfileï¼šå¦‚æžœreqirements.txtä¸­æœ‰åŒ…çš„ä¾èµ–ï¼ˆå¦‚æœ¬æ–‡ä¸­easytraderï¼‰ï¼Œåˆ™éœ€æŠŠæ­¤åŒ…æ”¾åœ¨Dockfileä¸­å®‰è£…ã€‚åŽŸå› ä¸ºreqirements.txtå®‰è£…æ—¶ï¼Œä¼šå…ˆå…¨éƒ¨æ£€æŸ¥åŒ…çš„ä¾èµ–ï¼Œç„¶åŽå†è¿›è¡Œå®‰è£…ï¼›å¦‚æžœæ£€æŸ¥æŸåŒ…çš„ä¾èµ–æ²¡æœ‰å®‰è£…ï¼Œåˆ™ä¼šç›´æŽ¥æŠ¥é”™ï¼Œæ•´ä¸ªreqirmentsä¹Ÿå°±å®‰è£…ä¸æˆåŠŸã€‚
 
-## ÆäËû
-* ±¾¹¤³Ì½ö×÷ÎªdockerÖÐpython2.7¼°Æô¶¯ÒÔÊý¾Ý¿â·½Ê½¿ØÖÆµÄµ÷¶ÈÈÎÎñ¹ÜÀí£¬¿ÉÔÚ´Ë»ù´¡ÉÏ½øÐÐÔÙ´ÎÐÞ¸ÄÀ©Õ¹£¬ÒÔÂú×ã²»Í¬ÐèÇó
+## å…¶ä»–
+* æœ¬å·¥ç¨‹ä»…ä½œä¸ºdockerä¸­python2.7åŠå¯åŠ¨ä»¥æ•°æ®åº“æ–¹å¼æŽ§åˆ¶çš„è°ƒåº¦ä»»åŠ¡ç®¡ç†ï¼Œå¯åœ¨æ­¤åŸºç¡€ä¸Šè¿›è¡Œå†æ¬¡ä¿®æ”¹æ‰©å±•ï¼Œä»¥æ»¡è¶³ä¸åŒéœ€æ±‚
