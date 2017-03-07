@@ -10,4 +10,4 @@ COPY . /code/
 
 EXPOSE 8000
 
-ENTRYPOINT ["/bin/bash", "ls"]
+#ENTRYPOINT ["/bin/bash", "ls"]
