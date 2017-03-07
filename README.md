@@ -4,7 +4,7 @@
 * 环境中安装vim工具
 
 ## 文件说明
-* app/config/global.json：配置文件，包括数据库连接及微信企业号的配置
+* config/global.json：配置文件，包括数据库连接及微信企业号的配置
 * QYWeiXin.py：微信消息发送模块，读取app/config/global.json的配置
 * Util.py：通用的功能，包括打印日志，获取时间，读取配置文件等基本功能
 * create_table.txt：建立数据库表的SQL语句
@@ -13,9 +13,7 @@
 * jobs.py：[cron_jobs.sh]脚本中需要使用到的多线程脚本，定时检查数据库是否有符合的任务，如果有，就新建线程并执行
 * dbutil.py：数据库连接的公用脚本
 * entrypoint.sh：docker容器启动后首次执行的脚本
-```shell
-注意最后有个tail -f命令，此命令是为了保证容器不会自动退出，否则在启动容器后，当执行完[entrypoint.sh]后容器也就自行退出。
-```
+> 最后有个tail -f命令，防止容器不自动退出。docker容器启动时若启动脚本会自行执行完，则容器也会跟着自行退出。
 * Dockfile：如果reqirements.txt中有包的依赖（如本文中easytrader），则需把此包放在Dockfile中安装。原因为reqirements.txt安装时，会先全部检查包的依赖，然后再进行安装；如果检查某包的依赖没有安装，则会直接报错，整个reqirments也就安装不成功。
 
 ## 其他

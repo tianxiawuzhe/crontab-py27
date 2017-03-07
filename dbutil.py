@@ -11,7 +11,7 @@ class DbUtil:
     
     ####
     def __init__(self):
-        cfg = Util.file2dict(os.path.dirname(os.path.abspath(__file__)) + '/app/config/global.json')
+        cfg = Util.file2dict(os.path.dirname(os.path.abspath(__file__)) + '/config/global.json')
         if cfg and cfg["DBConnect"]:
             self.__config = cfg["DBConnect"]
         

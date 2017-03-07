@@ -26,7 +26,7 @@ class QYWeixinMsg(object):
             'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko'
         }
         self.s.headers.update(headers)
-        cfg = Util.file2dict(os.path.dirname(os.path.abspath(__file__)) + '/app/config/global.json')
+        cfg = Util.file2dict(os.path.dirname(os.path.abspath(__file__)) + '/config/global.json')
         if cfg and cfg["QiYeWeiXin"]:
             self.__config = cfg["QiYeWeiXin"]
             self.__getToken()

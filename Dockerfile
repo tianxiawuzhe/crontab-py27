@@ -26,10 +26,6 @@ apt-get autoclean && \
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
 ls
 
-#pip install -r /code/libs/easytrader/requirements.txt && \
-#chown -R app:crontab /var/spool/cron/crontabs/app && \
-#chmod 600 /var/spool/cron/crontabs/app && \
-
 EXPOSE 8000
 
 ENTRYPOINT ["/bin/bash", "/code/entrypoint.sh"]
