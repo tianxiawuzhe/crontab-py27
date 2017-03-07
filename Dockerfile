@@ -7,7 +7,7 @@ WORKDIR /code
 
 COPY . /code/
 ##COPY libs /usr/local/lib/python2.7/
-#ADD crontab_content.txt /var/spool/cron/crontabs/root
+ADD crontab_content.txt /var/spool/cron/crontabs/root
 
 RUN apt-get update && \
 apt-get install -y cron && \
