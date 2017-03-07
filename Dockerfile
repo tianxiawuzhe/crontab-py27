@@ -12,7 +12,6 @@ apt-get install -y cron && \
 apt-get install -y default-jre && \
 apt-get install -y vim && \
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
-chmod 0600 /var/spool/cron/crontabs/root && \
 pip install --upgrade pip && \
 apt-get clean && \
 apt-get autoclean && \
