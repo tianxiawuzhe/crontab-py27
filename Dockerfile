@@ -7,16 +7,6 @@ WORKDIR /code
 
 COPY . /code/
 
-RUN apt-get update && \
-apt-get install -y cron && \
-apt-get install -y default-jre && \
-apt-get install -y vim && \
-rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
-pip install --upgrade pip && \
-apt-get clean && \
-apt-get autoclean && \
-rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
-ls
 
 EXPOSE 8000
 
