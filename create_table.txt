@@ -1,0 +1,14 @@
+drop table IF EXISTS job_task;
+CREATE TABLE job_task
+(
+    id                  INT NOT NULL AUTO_INCREMENT                   COMMENT '主键，自增ID',
+    mod_name            varchar(50) NOT NULL                          COMMENT '模块名，即python文件名',
+    cls_name            varchar(50) NOT NULL DEFAULT ''               COMMENT '类名，若python文件中有类，则为类名，若无类名，则为空',
+    fuc_name            varchar(50) NOT NULL                          COMMENT '方法名，python文件中某函数名',
+    run_time            TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP  COMMENT '开始运行时间',
+    args                varchar(250) NOT NULL DEFAULT ''              COMMENT '参数，向被调函数中传入的参数，数组方式',
+    cycle               INT(4) NOT NULL DEFAULT 0                     COMMENT '周期(秒)，定时调度执行周期',
+    run_cnt             INT(2) NOT NULL DEFAULT 1                     COMMENT '次数，运行多少次后结束调度任务',
+    status              INT(1) NOT NULL DEFAULT 0                     COMMENT '状态，0-不运行，1-运行，3-正在被执行中',
+    PRIMARY KEY (id)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
