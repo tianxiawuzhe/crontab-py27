@@ -2,6 +2,7 @@
 * 镜像基于daocloud.io/python:2.7
 * 建立一条crontab任务，使用数据库控制定时调度
 * 含给微信企业号发送消息
+* 工程目录中可包含app/libs目录，其中app目录中存放应用相关python，libs下放自定义的库，这2级目录在jobs.py调用时已经添加到sys.path中
 
 ## 文件说明
 * config/global.json：配置文件，包括数据库连接及微信企业号的配置
