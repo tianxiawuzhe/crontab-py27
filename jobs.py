@@ -9,6 +9,10 @@ import Util
 appdir = os.path.dirname(os.path.abspath(__file__)) + '/app'
 if os.path.exists(appdir):
     sys.path.append(appdir)
+    
+libdir = os.path.dirname(os.path.abspath(__file__)) + '/app/libs'
+if os.path.exists(libdir):
+    sys.path.append(libdir)
 
 class Task(object):  
     def __init__(self,id, mod,cls,func, cycle, run_cnt, args=None):
