@@ -8,8 +8,8 @@
     },
     "QiYeWeiXin": {
         "agentid": 1,
-        "corpid": "wxbXXXXXXcab",
-        "corpsecret": "XXXXXXXXXXXXXXXXXX",
+        "corpid": "wxb10d274ce0b86cab",
+        "corpsecret": "JUqVWhj_bWQ0YOBooLh7ujBuMuPKbErcAJ8P59BQUYx2947ynvlr5tgZWDH__ZGw",
         "login_url": "https://qyapi.weixin.qq.com/cgi-bin/gettoken",
         "send_url": "https://qyapi.weixin.qq.com/cgi-bin/message/send"
     }
