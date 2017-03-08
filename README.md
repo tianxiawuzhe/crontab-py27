@@ -1,7 +1,7 @@
-# crontab-py27
+# py27-cron-weixin
 * 镜像基于daocloud.io/python:2.7
 * 建立一条crontab任务，使用数据库控制定时调度
-* 环境中安装vim工具
+* 含给微信企业号发送消息
 
 ## 文件说明
 * config/global.json：配置文件，包括数据库连接及微信企业号的配置
