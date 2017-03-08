@@ -1,10 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import sys
+import sys, os
 import threading, time, traceback, json
 from dbutil import DbUtil
 from QYWeiXin import QYWeixinMsg
 import Util
+
+appdir = os.path.dirname(os.path.abspath(__file__)) + '/app'
+if os.path.exists(appdir):
+    sys.path.append(appdir)
 
 class Task(object):  
     def __init__(self,id, mod,cls,func, cycle, run_cnt, args=None):
