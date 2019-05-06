@@ -1,5 +1,4 @@
 FROM daocloud.io/python:2.7
-MAINTAINER JiangLong <j_l2006@163.com>
 
 RUN mkdir -p /code/app/
 
